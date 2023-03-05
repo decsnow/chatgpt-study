@@ -1,0 +1,21 @@
+adapters:
+  - http
+  - ws
+debug: true
+enableVerify: true
+verifyKey: 1234567890
+singleMode: false
+cacheSize: 4096
+persistenceFactory: 'built-in'
+adapterSettings:
+  ## HTTP 服务的主机, 端口和跨域设置
+  http:
+    host: mirai
+    port: 8080
+    cors: ["*"]
+
+  ## Websocket 服务的主机, 端口和事件同步ID设置
+  ws:
+    host: mirai
+    port: 8080
+    reservedSyncId: -1
